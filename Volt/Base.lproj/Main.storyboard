@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Volt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background image" translatesAutoresizingMaskIntoConstraints="NO" id="kZL-d6-rdK">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hjv-D5-c8q">
+                                <rect key="frame" x="101" y="90" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5Ht-1F-rZJ"/>
+                                    <constraint firstAttribute="height" constant="100" id="Znp-sZ-479"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Volt!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faR-Rp-XF9">
+                                <rect key="frame" x="20" y="220" width="362" height="39.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provide your registered mobile number to login to your Volt account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pte-1f-fSv">
+                                <rect key="frame" x="20" y="279.66666666666669" width="362" height="45.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KrQ-9b-6Bc">
+                                <rect key="frame" x="20" y="355.33333333333331" width="362" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.connection.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vLy-QZ-KPm">
+                                        <rect key="frame" x="10" y="9.9999999999999964" width="60" height="38.666666666666671"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="7XD-ql-MYX"/>
+                                            <constraint firstAttribute="height" constant="40" id="mun-Sb-Imr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input your mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfI-Y6-3C8">
+                                        <rect key="frame" x="80" y="10" width="272" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="vLy-QZ-KPm" firstAttribute="top" secondItem="KrQ-9b-6Bc" secondAttribute="top" constant="10" id="0AJ-e7-QXm"/>
+                                    <constraint firstAttribute="bottom" secondItem="rfI-Y6-3C8" secondAttribute="bottom" constant="10" id="0gX-7J-123"/>
+                                    <constraint firstItem="rfI-Y6-3C8" firstAttribute="leading" secondItem="vLy-QZ-KPm" secondAttribute="trailing" constant="10" id="INL-TA-W3H"/>
+                                    <constraint firstAttribute="bottom" secondItem="vLy-QZ-KPm" secondAttribute="bottom" constant="10" id="bhT-dC-UFx"/>
+                                    <constraint firstAttribute="height" constant="60" id="erV-zw-QPO"/>
+                                    <constraint firstItem="vLy-QZ-KPm" firstAttribute="leading" secondItem="KrQ-9b-6Bc" secondAttribute="leading" constant="10" id="ifV-gW-XbI"/>
+                                    <constraint firstItem="rfI-Y6-3C8" firstAttribute="top" secondItem="KrQ-9b-6Bc" secondAttribute="top" constant="10" id="qHo-8n-bg1"/>
+                                    <constraint firstAttribute="trailing" secondItem="rfI-Y6-3C8" secondAttribute="trailing" constant="10" id="zrb-w6-tOI"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upj-Zf-KrO">
+                                <rect key="frame" x="20" y="465.33333333333331" width="362" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AbA-yx-YXg"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="faR-Rp-XF9" secondAttribute="trailing" constant="20" id="8BX-Ev-7yo"/>
+                            <constraint firstItem="Pte-1f-fSv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Yc-k1-tiE"/>
+                            <constraint firstItem="Pte-1f-fSv" firstAttribute="top" secondItem="faR-Rp-XF9" secondAttribute="bottom" constant="20" id="D3D-O7-DMR"/>
+                            <constraint firstItem="hjv-D5-c8q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="90" id="L8L-WP-mRV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kZL-d6-rdK" secondAttribute="trailing" id="OCR-pw-X19"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pte-1f-fSv" secondAttribute="trailing" constant="20" id="PLp-HD-tFN"/>
+                            <constraint firstItem="KrQ-9b-6Bc" firstAttribute="top" secondItem="Pte-1f-fSv" secondAttribute="bottom" constant="30" id="Qvi-Ef-CEN"/>
+                            <constraint firstItem="KrQ-9b-6Bc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="URV-d1-t26"/>
+                            <constraint firstAttribute="bottom" secondItem="kZL-d6-rdK" secondAttribute="bottom" id="UkD-tl-UIz"/>
+                            <constraint firstItem="Upj-Zf-KrO" firstAttribute="top" secondItem="KrQ-9b-6Bc" secondAttribute="bottom" constant="50" id="YA1-NU-fyb"/>
+                            <constraint firstItem="Upj-Zf-KrO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aZc-DN-GkI"/>
+                            <constraint firstItem="hjv-D5-c8q" firstAttribute="centerX" secondItem="kZL-d6-rdK" secondAttribute="centerX" id="cA0-aw-osi"/>
+                            <constraint firstItem="faR-Rp-XF9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="foZ-Bv-6Ub"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Upj-Zf-KrO" secondAttribute="trailing" constant="20" id="itL-uI-QbQ"/>
+                            <constraint firstItem="kZL-d6-rdK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lRB-yq-jIE"/>
+                            <constraint firstItem="faR-Rp-XF9" firstAttribute="top" secondItem="hjv-D5-c8q" secondAttribute="bottom" constant="30" id="r65-Yr-YtY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KrQ-9b-6Bc" secondAttribute="trailing" constant="20" id="xOx-5r-Fqj"/>
+                            <constraint firstItem="kZL-d6-rdK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xkb-Xx-IjX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="KrQ-9b-6Bc" id="3ng-Pp-1tx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.297709923664122" y="100.70422535211269"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background image" width="736" height="1308"/>
+        <image name="logo" width="447" height="447"/>
+        <image name="phone.connection.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.55294117649999996" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
